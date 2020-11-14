@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
   color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper h1 {
+  font-size: 4rem;
+  margin: 1rem 0;
+  transition: 1s
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper .hideman {
+  height: 4.5rem;
+  opacity: 1;
+  overflow: hidden;
+  transition: 0.5s
+}
+
+.wrapper .hideman input[type="text"] {
+  margin: 1rem 1rem 0;
+  border-radius: 2rem;
+  background-color: #d1d8e0;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center
+}
+
+.wrapper .hideman input[type="text"]:focus {
+  outline: none
+}
+
+.wrapper p {
+  text-align: center
+}
+
+.wrapper .hide {
+  height: 0;
+  opacity: 0;
+  transition: 0.5s
+}
+
+.wrapper .correct {
+  color: #fc5c65
+}
+
+.wrapper #ending {
+  text-align: center
+}
+
+.ending {
+  background-color: #fc5c65;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  transition: background-color 0.5s;
+  font-weight: bold
+}
+
+.ending a {
+  color: white;
+  text-decoration: none
+}
+
+.ending a:hover {
+  text-decoration: underline;
+  color: black
+}
+
+nav {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  bottom: 1rem;
+  text-align: center;
+  font-weight: bold
+}
+
+nav a {
+  color: white;
+  text-decoration: none
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #fc5c65
 }
